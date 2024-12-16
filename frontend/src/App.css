@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --search-bar: rgba(17, 12, 46, 0.048);
+  --primary-color: #ff7e01;
+  --secondary-color: #faa935;
+  --heading-color: #000000;
+  --menu-color: #ffffff;
+  /* --text-color: #6e7074; */
+  --text-color-link: #000000;
+  --font-name: "Montserrat", sans-serif;
+  --subtitle-font-name: "Island Moments", cursive;
+  --navbar-shadow-color: #002c3540;
+  --search-bar-shadow-color: #ffc10761;
+  --background-gradiant: radial-gradient(
+    circle,
+    rgb(125, 211, 225) 38%,
+    rgb(135, 219, 219) 120%
+  );
+}
+[data-bs-theme="dark"] {
+  --menu-color: #000000;
+  --search-bar: rgb(117, 111, 111);
+  --primary-color: #0d79c6;
+  --secondary-color: #133ba7;
+  --bs-body-bg: rgb(4 26 35);
+  --my-shadow-color: gray;
+  --text-color-link: #ffffff;
+  --heading-color: #ffffff;
+  --bs-list-group-color: #ffffff;
+  --bs-list-group-bg: none;
+  --navbar-shadow-color: #009cbbc0;
+  --search-bar-shadow-color: #16beb380;
+  --background-gradiant: radial-gradient(
+    circle,
+    rgba(5, 61, 74, 1) 38%,
+    rgba(72, 206, 235, 1) 450%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+}
+
+section {
+  padding: 50px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+ul {
+  list-style: none;
+}
+
+.primary__btn {
+  background: var(--secondary-color) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.4rem 1.5rem !important;
+}
+.ri-moon-clear-fill {
+  color: white;
+}
+.primary__btn a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.primary__btn a:hover {
+  color: inherit;
+}
+.secondary__btn {
+  background: transparent !important;
+  color: #0b2727 !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+.secondary__btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--heading-color);
+}
+
+.secondary__btn a:hover {
+  color: inherit;
+}
+
+.section__subtitle {
+  background: var(--secondary-color);
+  font-family: var(--subtitle-font-name);
+  width: max-content;
+  padding: 0px 0.5rem;
+  padding-right: 1rem;
+
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--heading-color);
+}
+
+@media only screen and (max-width: 992px) {
+  .primary__btn a,
+  .secondary__btn a {
+    font-style: 0.9rem;
+  }
+
+  .primary__btn,
+  .secondary__btn,
+  .btn-dark {
+    padding: 0.2rem 1.1rem !important;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+}
